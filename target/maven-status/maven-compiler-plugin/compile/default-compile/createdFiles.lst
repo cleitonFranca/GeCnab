@@ -1,0 +1,9 @@
+br/com/gecnab/retorno/Sumario.class
+br/com/gecnab/utils/AbstractFlatFile.class
+br/com/gecnab/ExemploRetorno.class
+br/com/gecnab/ExemploRemessa.class
+br/com/gecnab/retorno/ArquivoRetorno.class
+br/com/gecnab/retorno/TransacaoDeTitulo.class
+br/com/gecnab/TesteGerarBoleto.class
+br/com/gecnab/retorno/Protocolo.class
+br/com/gecnab/utils/AbstractTransacaoDeTitulo.class
