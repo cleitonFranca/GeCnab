@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<txg:Texgit xmlns:txg="http://gilmatryx.googlepages.com/Texgit"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://gilmatryx.googlepages.com/Texgit file:////home/gilmar/WORKSPACE/TexgitSchema.xsd"
-	version="1.0-academic">
+<txg:Texgit xmlns:txg="http://jrimum.org/texgit"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://jrimum.org/texgit http://jrimum.org/texgit/chrome/site/TexgitSchema.xsd" 
+version="1.0-academic">
 
 
 	<FlatFile>

@@ -16,6 +16,7 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang.time.DateUtils;
 import org.jrimum.bopepo.pdf.Files;
@@ -45,7 +46,7 @@ public class CBR641 {
 	
 private static int convenio = 2866935 ;
 	
-	private static int sequencial ; // Vari�vel usada para seta a sequencia dos arquivos
+	private static int sequencial = new Random(945L).nextInt(); // Vari�vel usada para seta a sequencia dos arquivos
 	private static String nDocumento = "000000088";	
 	/**
 	 * Classe geradora de arquivos de REMESSA para BANCO DO BRASIL - CNAB 400 
@@ -267,9 +268,7 @@ private static int convenio = 2866935 ;
 		 */
 		Record header = ff.createRecord("Header");
 		
-	
-		
-		
+		header.setValue("SequencialRemessa", StringUtils.leftPad(StringUtils.right(sequencial+"", 5), 7, "0")); // "0000000"
 		header.setValue("PrefixoAgencia",titulo.getContaBancaria().getAgencia().getCodigo());
 		header.setValue("DigitoVerificadorAgencia", titulo.getContaBancaria().getAgencia().getDigitoVerificador());
 		header.setValue("NumeroContaCorrente", titulo.getContaBancaria().getNumeroDaConta().getCodigoDaConta());
